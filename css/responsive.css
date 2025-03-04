@@ -180,3 +180,49 @@ only screen and (min-resolution: 192dpi) {
     backface-visibility: hidden;
   }
 }
+/* ===================================================
+   AJUSTES DE REDES SOCIALES EN FOOTER PARA MÓVILES
+=================================================== */
+@media (max-width: 767px) {
+  #fh5co-footer .fh5co-social {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #fh5co-footer .fh5co-social li {
+    margin: 0 8px 10px 8px; /* Espaciado reducido */
+    transition: transform 0.3s ease;
+  }
+
+  #fh5co-footer .fh5co-social li a {
+    width: 35px;  /* Tamaño reducido */
+    height: 35px;
+    line-height: 35px;
+    background-color: rgba(235, 91, 48, 0.9); /* Color más consistente */
+  }
+
+  #fh5co-footer .fh5co-social li a i {
+    font-size: 1.4rem !important; /* Tamaño de ícono ajustado */
+    vertical-align: middle;
+  }
+
+  /* Efecto hover para mejor interactividad */
+  #fh5co-footer .fh5co-social li:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* Optimización adicional para pantallas muy pequeñas */
+@media (max-width: 360px) {
+  #fh5co-footer .fh5co-social li {
+    margin: 0 5px 8px 5px;
+  }
+
+  #fh5co-footer .fh5co-social li a {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+  }
+}

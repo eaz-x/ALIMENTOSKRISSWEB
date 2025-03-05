@@ -591,6 +591,43 @@
 		
 
 	});
+// Script para funcionalidad del menú móvil
+document.addEventListener('DOMContentLoaded', () => {
+	const toggle = document.querySelector('.nav-toggle');
+	const mobileMenu = document.querySelector('.nav-mobile');
+  
+	// Toggle del menú
+	toggle.addEventListener('click', () => {
+	  toggle.classList.toggle('active');
+	  mobileMenu.classList.toggle('active');
+	});
+  
+	// Cerrar menú al hacer clic en enlace
+	document.querySelectorAll('.nav-mobile a').forEach(link => {
+	  link.addEventListener('click', () => {
+		toggle.classList.remove('active');
+		mobileMenu.classList.remove('active');
+	  });
+	});
+  
+	// Scroll suave y detección de sección activa
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+	  anchor.addEventListener('click', function(e) {
+		e.preventDefault();
+		const target = document.querySelector(this.getAttribute('href'));
+		if(target) {
+		  target.scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		  });
+		  
+		  // Actualizar clase activa
+		  document.querySelectorAll('a').forEach(link => link.classList.remove('active'));
+		  this.classList.add('active');
+		}
+	  });
+	});
+  });
 
 
 }());

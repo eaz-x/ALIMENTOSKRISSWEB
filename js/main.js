@@ -588,46 +588,61 @@
 		reservationAnimate();
 		footerAnimate();
 
-		
-
 	});
+
 // Script para funcionalidad del menú móvil
 document.addEventListener('DOMContentLoaded', () => {
 	const toggle = document.querySelector('.nav-toggle');
 	const mobileMenu = document.querySelector('.nav-mobile');
-  
+
 	// Toggle del menú
 	toggle.addEventListener('click', () => {
-	  toggle.classList.toggle('active');
-	  mobileMenu.classList.toggle('active');
+	toggle.classList.toggle('active');
+	mobileMenu.classList.toggle('active');
 	});
-  
+
 	// Cerrar menú al hacer clic en enlace
 	document.querySelectorAll('.nav-mobile a').forEach(link => {
-	  link.addEventListener('click', () => {
+	link.addEventListener('click', () => {
 		toggle.classList.remove('active');
 		mobileMenu.classList.remove('active');
-	  });
 	});
-  
+	});
+
 	// Scroll suave y detección de sección activa
 	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-	  anchor.addEventListener('click', function(e) {
+	anchor.addEventListener('click', function(e) {
 		e.preventDefault();
 		const target = document.querySelector(this.getAttribute('href'));
 		if(target) {
-		  target.scrollIntoView({
+		target.scrollIntoView({
 			behavior: 'smooth',
 			block: 'start'
-		  });
-		  
+		});
+		
 		  // Actualizar clase activa
-		  document.querySelectorAll('a').forEach(link => link.classList.remove('active'));
-		  this.classList.add('active');
+		document.querySelectorAll('a').forEach(link => link.classList.remove('active'));
+		this.classList.add('active');
 		}
-	  });
 	});
-  });
-
+	});
+});
+// Manejo de enlaces entre páginas
+document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        const hash = this.hash;
+        const targetPage = this.getAttribute('href').split('#')[0];
+        
+        if(targetPage !== window.location.pathname) {
+            window.location.href = this.getAttribute('href');
+            return;
+        }
+        
+        if(hash) {
+            e.preventDefault();
+            document.querySelector(hash).scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
 
 }());

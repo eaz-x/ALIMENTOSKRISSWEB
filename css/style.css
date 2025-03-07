@@ -497,43 +497,43 @@ MEDIA QUERIES PARA RESPONSIVE DESIGN
   }
 }
 /* ===================================================
-SECCIÓN DE CITAS (#fh5co-sayings)
+SECCIÓN DE CITAS (#frases-inspiradoras)
 =================================================== */
-#fh5co-sayings {
+#frases-inspiradoras {
   padding: 1em 0;
   background-color: #fff;
 }
 
-#fh5co-sayings .flexslider .slides li {
+#frases-inspiradoras .flexslider .slides li {
   font-size: 40px;
   line-height: 1.5;
   text-align: center;
 }
 
-#fh5co-sayings .flexslider .slides li blockquote {
+#frases-inspiradoras .flexslider .slides li blockquote {
   margin: 0;
   padding: 0;
 }
 
-#fh5co-sayings .flexslider .slides li blockquote p {
+#frases-inspiradoras .flexslider .slides li blockquote p {
   font-size: 25px;
   line-height: 1;
   color: #333;
   margin-bottom: 10px;
 }
 
-#fh5co-sayings .flexslider .slides li blockquote p.quote-author {
+#frases-inspiradoras .flexslider .slides li blockquote p.quote-author {
   font-size: 20px;
   color: gray;
   font-style: italic;
 }
 
-#fh5co-sayings .flexslider .flex-control-paging.flex-control-nav {
+#frases-inspiradoras .flexslider .flex-control-paging.flex-control-nav {
   position: relative;
   bottom: -70px;
 }
 
-#fh5co-sayings .flexslider .flex-control-paging.flex-control-nav li a {
+#frases-inspiradoras .flexslider .flex-control-paging.flex-control-nav li a {
   width: 12px;
   height: 12px;
   background: rgba(0, 0, 0, 0.2);
@@ -541,13 +541,13 @@ SECCIÓN DE CITAS (#fh5co-sayings)
   transition: all 0.3s ease;
 }
 
-#fh5co-sayings .flexslider .flex-control-paging.flex-control-nav li a.flex-active {
+#frases-inspiradoras .flexslider .flex-control-paging.flex-control-nav li a.flex-active {
   background: transparent;
   border: 2px solid #EB5B30;
 }
 
-#fh5co-sayings .flexslider .flex-control-paging.flex-control-nav li a:active,
-#fh5co-sayings .flexslider .flex-control-paging.flex-control-nav li a:focus {
+#frases-inspiradoras .flexslider .flex-control-paging.flex-control-nav li a:active,
+#frases-inspiradoras .flexslider .flex-control-paging.flex-control-nav li a:focus {
   outline: none;
 }
 
@@ -555,23 +555,23 @@ SECCIÓN DE CITAS (#fh5co-sayings)
 MEDIA QUERIES PARA RESPONSIVE DESIGN
 =================================================== */
 @media screen and (max-width: 768px) {
-  #fh5co-sayings {
+  #frases-inspiradoras {
     padding: 5em 0;
   }
   
-  #fh5co-sayings .flexslider .slides li blockquote {
+  #frases-inspiradoras .flexslider .slides li blockquote {
     padding: 0 20px;
   }
   
-  #fh5co-sayings .flexslider .slides li blockquote p {
+  #frases-inspiradoras .flexslider .slides li blockquote p {
     font-size: 20px;
   }
   
-  #fh5co-sayings .flexslider .slides li blockquote p.quote-author {
+  #frases-inspiradoras .flexslider .slides li blockquote p.quote-author {
     font-size: 18px;
   }
   
-  #fh5co-sayings .flexslider .flex-control-paging.flex-control-nav {
+  #frases-inspiradoras .flexslider .flex-control-paging.flex-control-nav {
     bottom: -60px;
   }
 }

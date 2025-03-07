@@ -8,37 +8,37 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Sección "Sobre Nosotros" -->
+  <!-- Sobre Nosotros -->
   <url>
-    <loc>https://alimentoskriss.com/fh5co-about</loc>
+    <loc>https://alimentoskriss.com/acerca-de</loc>
     <lastmod>2024-03-06</lastmod>
     <priority>0.9</priority>
   </url>
 
-  <!-- Sección de contacto -->
+  <!-- Contacto -->
   <url>
-    <loc>https://alimentoskriss.com/fh5co-contact</loc>
+    <loc>https://alimentoskriss.com/contacto</loc>
     <lastmod>2024-03-06</lastmod>
     <priority>0.8</priority>
   </url>
 
-  <!-- Política de privacidad -->
+  <!-- Política de Privacidad -->
   <url>
     <loc>https://alimentoskriss.com/politicas-de-privacidad.html</loc>
     <lastmod>2024-03-06</lastmod>
     <priority>0.7</priority>
   </url>
 
-  <!-- Sección destacada (productos/proceso) -->
+  <!-- Nuestro Proceso de Elaboración -->
   <url>
-    <loc>https://alimentoskriss.com/fh5co-featured</loc>
+    <loc>https://alimentoskriss.com/nuestro-proceso</loc>
     <lastmod>2024-03-06</lastmod>
     <priority>0.8</priority>
   </url>
 
-  <!-- Citas inspiradoras -->
+  <!-- Citas Inspiradoras -->
   <url>
-    <loc>https://alimentoskriss.com/fh5co-sayings</loc>
+    <loc>https://alimentoskriss.com/frases-inspiradoras</loc>
     <lastmod>2024-03-06</lastmod>
     <priority>0.6</priority>
   </url>

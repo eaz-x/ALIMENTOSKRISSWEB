@@ -4,11 +4,10 @@ FUENTE PERSONALIZADA (ICOMOON - ICONOS)
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
-  src: 
-    url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), /* Formato para IE */
-    url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), /* TTF estándar */
-    url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), /* WOFF optimizado */
-    url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg"); /* SVG para navegadores modernos */
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"),
+       url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"),
+       url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"),
+       url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,135 +16,151 @@ FUENTE PERSONALIZADA (ICOMOON - ICONOS)
 ESTILOS BASE DE LA PÁGINA
 ================================================= */
 body {
-  font-family: "Merriweather", serif; /* Fuente principal del texto */
-  font-size: 18px;                   /* Tamaño base */
-  font-weight: 300;                  /* Grosor de fuente (light) */
-  line-height: 2;                    /* Espaciado entre líneas = 2x tamaño fuente */
-  color: #5e493a;                    /* Color café oscuro para texto */
-  
-  /* Variante para contenido ancho */
-  &.fh5co-overflow {
-    overflow-x: auto; /* Muestra scroll horizontal si el contenido es más ancho que la pantalla */
-  }
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 2;
+  color: #5e493a;
+}
+
+body.fh5co-overflow {
+  overflow-x: auto;
 }
 
 /* ================================================
 ENLACES
 ================================================= */
 a {
-  color: #fb6e14;                    /* Color naranja para links */
-  transition: color 0.5s ease;       /* Transición suave de color */
-  
-  /* Estados interactivos */
-  &:hover, &:focus, &:active {
-    color: #bf4c03; /* Color naranja oscuro al interactuar */
-  }
+  color: #fb6e14;
+  transition: color 0.5s ease;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #bf4c03;
 }
 
 /* ================================================
 ENCABEZADOS
 ================================================= */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", serif; /* Fuente decorativa para títulos */
-  color: #000;                            /* Color negro puro */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  color: #000;
 }
 
 /* ================================================
 PÁRRAFOS
 ================================================= */
 p {
-  margin-bottom: 30px; /* Espaciado inferior entre párrafos */
+  margin-bottom: 30px;
 }
 
 /* ================================================
 COMPONENTE: BOTONES (ESTILOS BASE)
 ================================================= */
 .btn {
-  margin: 0 4px 4px 0;       /* Márgenes: arriba derecha abajo izquierda */
-  padding: 8px 16px;         /* Espaciado interno */
-  font-family: "Playfair Display", serif; /* Fuente decorativa */
-  font-size: 12px;          
-  letter-spacing: 2px;       /* Espacio entre letras */
-  text-transform: uppercase; /* Texto en mayúsculas */
-  font-weight: 700;          /* Negrita */
-  border: 2px solid transparent; /* Borde invisible por defecto */
-  border-radius: 4px;        /* Esquinas redondeadas */
-  transition: all 0.3s ease; /* Transición para todos los efectos */
-  cursor: pointer;           /* Cursor tipo mano al pasar */
-  
-  /* Tamaños alternativos */
-  &-md { padding: 10px 20px; } /* Botón mediano */
-  &-lg { padding: 18px 36px; } /* Botón grande */
-  
-  /* Estados comunes */
-  &:hover, &:active, &:focus {
-    box-shadow: none;    /* Elimina sombras predeterminadas */
-    outline: none;       /* Quita contorno al enfocar */
-  }
+  margin: 0 4px 4px 0;
+  padding: 8px 16px;
+  font-family: "Playfair Display", serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-md {
+  padding: 10px 20px;
+}
+
+.btn-lg {
+  padding: 18px 36px;
 }
 
 /* ================================================
 VARIANTES DE COLOR PARA BOTONES
 ================================================= */
-/* Mixin para generar variantes (SCSS) */
-/* Botones principales */
-.btn-primary {
-  background-color: #00ff0d;
-  color: #333;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
 
-.btn-primary:hover {
-  background-color: #FFC107;
-}
-
-/* Variantes de botones (convertido desde @each) */
+/* Estilo base para botones */
 .btn-primary {
   background: #fb6e14;
   color: #fff;
-  border-color: #fb6e14;
+  border: 2px solid #CA242A;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
+
+/* Estados interactivos */
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
   background: #f16104;
-  border-color: #f16104;
+  border-color: #CA242A;
 }
+
+/* Variante outline */
 .btn-primary.btn-outline {
   background: transparent;
   color: #fb6e14;
 }
+
 .btn-primary.btn-outline:hover,
 .btn-primary.btn-outline:focus,
 .btn-primary.btn-outline:active {
-  background: #fb6e14;
+  background: #b8aca5;
   color: #fff;
 }
 
+/* Estilo base para botones de éxito */
 .btn-success {
   background: #58ca7e;
   color: #fff;
-  border-color: #58ca7e;
+  border: 2px solid #49b46d;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
+
+/* Estados interactivos */
 .btn-success:hover,
 .btn-success:focus,
 .btn-success:active {
   background: #45c46f;
-  border-color: #45c46f;
+  border-color: #49b46d;
 }
+
+/* Variante outline */
 .btn-success.btn-outline {
   background: transparent;
   color: #58ca7e;
+  border-color: #49b46d; /* Asegura borde visible */
 }
+
 .btn-success.btn-outline:hover,
 .btn-success.btn-outline:focus,
 .btn-success.btn-outline:active {
-  background: #58ca7e;
+  background: #45c46f; /* Color consistente con hover del botón sólido */
   color: #fff;
+  border-color: #49b46d;
 }
 
 /* Repetir para las demás variantes de botones (info, warning, danger) */
@@ -172,87 +187,82 @@ VARIANTES DE COLOR PARA BOTONES
 FORMULARIOS (INPUTS)
 ================================================= */
 .form-control {
-  width: 100%;               /* Ocupa todo el ancho disponible */
-  height: 54px;              /* Altura fija */
-  padding: 8px 12px;         /* Espaciado interno */
-  font-size: 18px;           
-  font-weight: 300;          
-  background: transparent;   /* Fondo transparente */
-  border: 2px solid rgba(0, 0, 0, 0.1); /* Borde gris claro */
-  transition: border-color 0.3s ease; /* Transición suave del borde */
-  
-  /* Efecto al enfocar */
-  &:focus, &:active {
-    outline: none;           /* Elimina contorno predeterminado */
-    box-shadow: none;        /* Elimina sombras */
-    border-color: #fb6e14;   /* Borde naranja al interactuar */
-  }
+  width: 100%;
+  height: 54px;
+  padding: 8px 12px;
+  font-size: 18px;
+  font-weight: 300;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus,
+.form-control:active {
+  outline: none;
+  box-shadow: none;
+  border-color: #fb6e14;
 }
 
 /* ===================================================
-SECCIÓN PRINCIPAL (#fh5co-home)
+SECCIÓN PRINCIPAL (#inicio)
 =================================================== */
-#fh5co-home {
-  min-height: 700px; /* Altura mínima de la sección */
-  background: url(../images/slide_1.jpg) no-repeat center center; /* Imagen de fondo */
-  background-size: cover; /* Cubre todo el espacio disponible */
-  position: relative; /* Permite posicionamiento absoluto de elementos hijos */
+#inicio {
+  min-height: 700px;
+  background: url(../images/slide_1.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 10px;
 }
 
-/* ===================================================
-ELEMENTOS OCULTOS DEL SLIDER (Flexslider)
-=================================================== */
-#fh5co-home .flexslider,
-#fh5co-home .slides,
-#fh5co-home .slides li {
-  display: none; /* Oculta elementos no utilizados del slider */
+#inicio .flexslider,
+#inicio .slides,
+#inicio .slides li {
+  display: none;
 }
 
 /* ===================================================
 CONTENIDO TEXTUAL CENTRADO
 =================================================== */
-#fh5co-home .fh5co-text {
-  position: absolute; /* Posicionamiento absoluto relativo al contenedor padre */
-  z-index: 3; /* Asegura que esté por encima del overlay */
-  width: 100%; /* Ocupa todo el ancho disponible */
-  top: 50%; /* Centrado vertical */
-  margin-top: -212px; /* Compensa la altura del contenido para centrado exacto */
-  text-align: center; /* Alineación central del texto */
+#inicio .fh5co-text {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  top: 50%;
+  margin-top: -212px;
+  text-align: center;
 }
 
-/* Estilos para el título principal */
-#fh5co-home .fh5co-text h1 {
+#inicio .fh5co-text h1 {
   margin: 0;
   padding: 0;
   font-family: "Playfair Display", serif;
-  font-size: 100px; /* Tamaño grande para impacto visual */
+  font-size: 100px;
   font-weight: 700;
   font-style: italic;
   color: #fff;
-  transition: 0.3s; /* Transición suave para posibles animaciones */
+  transition: 0.3s;
 }
 
-/* Estilos para el subtítulo */
-#fh5co-home .fh5co-text h2 {
+#inicio .fh5co-text h2 {
   margin: 0;
   padding: 0;
   font-family: "Merriweather", serif;
   font-weight: 300;
   font-size: 40px;
-  letter-spacing: 2px; /* Espaciado entre letras para mejor legibilidad */
+  letter-spacing: 2px;
   color: #fff;
   transition: 0.3s;
 }
 
-/* Elementos específicos del subtítulo */
-#fh5co-home .fh5co-text h2 span {
+#inicio .fh5co-text h2 span {
   font-family: "Playfair Display", serif;
   font-style: italic;
-  text-transform: none; /* Elimina mayúsculas si viene heredado */
+  text-transform: none;
 }
 
-#fh5co-home .fh5co-text h2 a {
-  color: #fb6e14; /* Color naranja para enlaces */
+#inicio .fh5co-text h2 a {
+  color: #fb6e14;
 }
 
 /* ===================================================
@@ -262,26 +272,24 @@ BOTÓN DE WHATSAPP
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #25D366; /* Color oficial de WhatsApp */
+  background-color: #25D366;
   color: #fff;
   text-decoration: none;
   font-size: 20px;
   padding: 10px 20px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  margin: auto; /* Centrado horizontal */
-  margin-top: 20px; /* Espaciado superior */
+  margin: auto;
+  margin-top: 20px;
 }
 
-/* Ícono de WhatsApp dentro del botón */
 .btn-whatsapp .fab.fa-whatsapp {
-  margin-right: 10px; /* Separación entre ícono y texto */
-  font-size: 35px; /* Tamaño del ícono */
+  margin-right: 10px;
+  font-size: 35px;
 }
 
-/* Efecto hover del botón */
 .btn-whatsapp:hover {
-  background-color: #128C7E; /* Color hover más oscuro */
+  background-color: #128C7E;
 }
 
 /* ===================================================
@@ -289,26 +297,26 @@ OVERLAY OSCURO
 =================================================== */
 .fh5co-overlay {
   position: absolute;
-  z-index: 2; /* Debajo del texto pero encima de la imagen */
+  z-index: 2;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: 0.5; /* Transparencia para efecto de overlay */
-  background: #000; /* Color negro para contraste */
+  opacity: 0.5;
+  background: #000;
 }
 
 /* ===================================================
 LOGOTIPO
 =================================================== */
 .logo-image {
-  max-width: 100%; /* Responsivo por naturaleza */
+  max-width: 100%;
   height: auto;
   display: block;
-  margin: -250px auto -110px; /* Posicionamiento especial con márgenes negativos */
+  margin: -250px auto -110px;
   padding: 10px;
-  border: 0px solid #FFD700; /* Borde invisible (podría eliminarse) */
-  border-radius: 10px;  
+  border: 0px solid #FFD700;
+  border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -318,11 +326,11 @@ MEDIA QUERIES PARA RESPONSIVE DESIGN
 
 /* Tablet - 768px o menos */
 @media screen and (max-width: 768px) {
-  #fh5co-home .fh5co-text h1 {
-    font-size: 60px; /* Reducción proporcional del tamaño */
+  #inicio .fh5co-text h1 {
+    font-size: 60px;
   }
   
-  #fh5co-home .fh5co-text h2 {
+  #inicio .fh5co-text h2 {
     font-size: 20px;
   }
   
@@ -332,7 +340,7 @@ MEDIA QUERIES PARA RESPONSIVE DESIGN
   }
   
   .btn-whatsapp .fab.fa-whatsapp {
-    font-size: 24px; /* Ajuste proporcional del ícono */
+    font-size: 24px;
     margin-right: 8px;
   }
   
@@ -344,8 +352,8 @@ MEDIA QUERIES PARA RESPONSIVE DESIGN
 
 /* Móvil - 480px o menos */
 @media screen and (max-width: 480px) {
-  #fh5co-home .fh5co-text h1 {
-    font-size: 40px; /* Tamaño móvil para título */
+  #inicio .fh5co-text h1 {
+    font-size: 40px;
   }
   
   .btn-whatsapp {
@@ -368,190 +376,179 @@ MEDIA QUERIES PARA RESPONSIVE DESIGN
    BOTÓN PRIMARIO - HOVER
 =================================================== */
 .btn-primary:hover {
-  background-color: #FFC107; /* Amarillo mostaza para efecto hover */
+  background-color: #FFC107;
 }
 
 /* ===================================================
    ESTILOS DE ENCABEZADOS
 =================================================== */
-.fh5co-heading {
-  .heading {
-    font-size: 50px;
-    font-style: italic;
-    position: relative;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-    
-    /* Línea decorativa inferior */
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      width: 40px;
-      height: 2px;
-      background: #16110d; /* Café muy oscuro */
-      margin-left: -20px; /* Centrado exacto */
-    }
+.fh5co-heading .heading {
+  font-size: 50px;
+  font-style: italic;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
 
-    @media (max-width: 768px) {
-      font-size: 30px; /* Reducción para móviles */
-    }
+.fh5co-heading .heading:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 40px;
+  height: 2px;
+  background: #16110d;
+  margin-left: -20px;
+}
+
+.fh5co-heading .sub-heading {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Media queries para encabezados */
+@media (max-width: 768px) {
+  .fh5co-heading .heading {
+    font-size: 30px;
   }
-
-  .sub-heading {
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 30px;
-
-    @media (max-width: 768px) {
-      font-size: 18px; /* Ajuste móvil */
-    }
+  
+  .fh5co-heading .sub-heading {
+    font-size: 18px;
   }
 }
 
 /* ===================================================
   SECCIÓN "SOBRE NOSOTROS"
 =================================================== */
-#fh5co-about {
+#acerca-de {
   display: flex;
   flex-wrap: wrap;
-  background: #e6e6e6; /* Gris claro de fondo */
+  background: #e6e6e6;
   width: 100%;
+}
 
-  .fh5co-2col {
-    width: 50%; /* Diseño de 2 columnas */
+#acerca-de .fh5co-2col {
+  width: 50%;
+}
 
-    @media (max-width: 1200px) {
-      width: 100%; /* Apila en tabletas */
-    }
+#acerca-de .fh5co-text {
+  padding: 2em 6em;
+  text-align: left;
+  background: #130d08 url(../images/wood_1.png) repeat;
+}
+
+#acerca-de .fh5co-text .btn {
+  color: #fff;
+}
+
+#acerca-de .fh5co-text .heading {
+  color: #EB5B30;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+#acerca-de .fh5co-text .heading:after {
+  background: #EB5B30;
+}
+
+#acerca-de .fh5co-text p {
+  line-height: 2;
+  color: rgb(0, 0, 0);
+}
+
+#acerca-de .fh5co-text p span.firstcharacter {
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding: 4px 10px 0 3px;
+  font-style: italic;
+  color: #000000;
+  font-family: "Playfair Display", serif;
+  position: relative;
+  top: -20px;
+}
+
+#acerca-de .fh5co-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Media queries para #acerca-de */
+@media (max-width: 1200px) {
+  #acerca-de .fh5co-2col {
+    width: 100%;
   }
-
-  .fh5co-text {
-    padding: 2em 6em;
-    text-align: left;
-    background: #130d08 url(../images/wood_1.png) repeat; /* Textura de madera */
-    
-    @media (max-width: 1200px) {
-      padding: 1em; /* Reducción de espacio en móviles */
-    }
-
-    .btn { color: #fff; } /* Botones claros sobre fondo oscuro */
-
-    .heading {
-      color: #EB5B30; /* Naranja oscuro */
-      font-weight: 300;
-      text-align: center;
-      margin-bottom: 30px;
-      padding-bottom: 30px;
-
-      /* Línea decorativa naranja */
-      &:after {
-        background: #EB5B30;
-      }
-    }
-
-    p {
-      line-height: 2;
-      color: rgb(0, 0, 0); /* Negro puro */
-
-      /* Letra capital decorativa */
-      span.firstcharacter {
-        float: left;
-        font-size: 75px;
-        line-height: 60px;
-        padding: 4px 10px 0 3px;
-        font-style: italic;
-        color: #000000;
-        font-family: "Playfair Display", serif;
-        position: relative;
-        top: -20px; /* Ajuste de posición vertical */
-      }
-    }
+  
+  #acerca-de .fh5co-text {
+    padding: 1em;
   }
+  
+  #acerca-de .fh5co-bg {
+    min-height: 500px;
+  }
+}
 
-  .fh5co-bg {
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @media (max-width: 1200px) {
-      min-height: 500px; /* Altura mínima para tabletas */
-    }
-
-    @media (max-width: 768px) {
-      min-height: 300px; /* Altura reducida para móviles */
-    }
+@media (max-width: 768px) {
+  #acerca-de .fh5co-bg {
+    min-height: 300px;
   }
 }
 /* ===================================================
 SECCIÓN DE CITAS (#fh5co-sayings)
 =================================================== */
 #fh5co-sayings {
-  padding: 1em 0; /* Espaciado vertical reducido en desktop */
-  background-color: #fff; /* Fondo blanco limpio */
+  padding: 1em 0;
+  background-color: #fff;
+}
 
-  /* =================================================
-  SLIDER DE CITAS (Flexslider)
-  ================================================= */
-  .flexslider {
-    .slides li {
-      font-size: 40px; /* Tamaño grande para impacto visual */
-      line-height: 1.5; /* Espaciado legible entre líneas */
-      text-align: center; /* Alineación central */
+#fh5co-sayings .flexslider .slides li {
+  font-size: 40px;
+  line-height: 1.5;
+  text-align: center;
+}
 
-      blockquote {
-        margin: 0; /* Elimina márgenes predeterminados */
-        padding: 0; /* Quita relleno por defecto */
+#fh5co-sayings .flexslider .slides li blockquote {
+  margin: 0;
+  padding: 0;
+}
 
-        p {
-          font-size: 25px; /* Texto principal de la cita */
-          line-height: 1; /* Espaciado compacto */
-          color: #333; /* Gris oscuro para mejor contraste */
-          margin-bottom: 10px; /* Separación con el autor */
+#fh5co-sayings .flexslider .slides li blockquote p {
+  font-size: 25px;
+  line-height: 1;
+  color: #333;
+  margin-bottom: 10px;
+}
 
-          /* Autor de la cita */
-          &.quote-author {
-            font-size: 20px; /* Tamaño diferenciado */
-            color: gray; /* Color gris para jerarquía */
-            font-style: italic; /* Estilo enfático */
-          }
-        }
-      }
-    }
+#fh5co-sayings .flexslider .slides li blockquote p.quote-author {
+  font-size: 20px;
+  color: gray;
+  font-style: italic;
+}
 
-    /* =============================================
-    PAGINACIÓN DEL SLIDER
-    ============================================= */
-    .flex-control-paging {
-      position: relative; /* Contexto de posicionamiento */
-      
-      &.flex-control-nav {
-        bottom: -70px; /* Posición debajo del contenido */
+#fh5co-sayings .flexslider .flex-control-paging.flex-control-nav {
+  position: relative;
+  bottom: -70px;
+}
 
-        li {
-          a {
-            width: 12px; /* Tamaño del punto */
-            height: 12px;
-            background: rgba(0, 0, 0, 0.2); /* Fondo semitransparente */
-            border-radius: 50%; /* Forma circular */
-            transition: all 0.3s ease; /* Animación suave */
+#fh5co-sayings .flexslider .flex-control-paging.flex-control-nav li a {
+  width: 12px;
+  height: 12px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
 
-            /* Estado activo */
-            &.flex-active {
-              background: transparent; /* Fondo vacío */
-              border: 2px solid #EB5B30; /* Borde naranja destacado */
-            }
+#fh5co-sayings .flexslider .flex-control-paging.flex-control-nav li a.flex-active {
+  background: transparent;
+  border: 2px solid #EB5B30;
+}
 
-            /* Estados de interacción */
-            &:active, 
-            &:focus {
-              outline: none; /* Elimina contorno predeterminado */
-            }
-          }
-        }
-      }
-    }
-  }
+#fh5co-sayings .flexslider .flex-control-paging.flex-control-nav li a:active,
+#fh5co-sayings .flexslider .flex-control-paging.flex-control-nav li a:focus {
+  outline: none;
 }
 
 /* ===================================================
@@ -559,127 +556,120 @@ MEDIA QUERIES PARA RESPONSIVE DESIGN
 =================================================== */
 @media screen and (max-width: 768px) {
   #fh5co-sayings {
-    padding: 5em 0; /* Mayor espaciado vertical en móviles */
-
-    .flexslider {
-      .slides li {
-        blockquote {
-          padding: 0 20px; /* Relleno lateral para no pegar texto */
-
-          p {
-            font-size: 20px; /* Reducción proporcional del texto */
-
-            &.quote-author {
-              font-size: 18px; /* Ajuste tamaño autor */
-            }
-          }
-        }
-      }
-
-      .flex-control-paging.flex-control-nav {
-        bottom: -60px; /* Ajuste posición paginación */
-      }
-    }
+    padding: 5em 0;
+  }
+  
+  #fh5co-sayings .flexslider .slides li blockquote {
+    padding: 0 20px;
+  }
+  
+  #fh5co-sayings .flexslider .slides li blockquote p {
+    font-size: 20px;
+  }
+  
+  #fh5co-sayings .flexslider .slides li blockquote p.quote-author {
+    font-size: 18px;
+  }
+  
+  #fh5co-sayings .flexslider .flex-control-paging.flex-control-nav {
+    bottom: -60px;
   }
 }
+
 /* ===================================================
-SECCIÓN DESTACADA (#fh5co-featured)
+SECCIÓN DESTACADA (#nuestro-proceso)
 =================================================== */
-#fh5co-featured {
-  padding: 7em 0; /* Espaciado vertical grande */
-  background: #130d08 url(../images/wood_1.png) repeat; /* Fondo oscuro con textura de madera */
+#nuestro-proceso {
+  padding: 7em 0;
+  background: #130d08 url(../images/wood_1.png) repeat;
+}
 
-  /* Estilos responsivos para pantallas medianas */
-  @media screen and (max-width: 768px) {
-    padding: 5em 0; /* Reduce espaciado en móviles */
+@media screen and (max-width: 768px) {
+  #nuestro-proceso {
+    padding: 5em 0;
   }
+}
+/* ================================================
+ENCABEZADO DE LA SECCIÓN
+=============================================== */
+.fh5co-heading .heading {
+  position: relative;
+  padding-top: 30px !important;
+  color: #EB5B30;
+}
 
-  /* ================================================
-  ENCABEZADO DE LA SECCIÓN
-  ================================================ */
-  .fh5co-heading {
-    .heading {
-      position: relative;
-      padding-top: 30px !important; /* Espacio para el ícono decorativo */
-      color: #EB5B30; /* Color naranja corporativo */
+.fh5co-heading .heading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  margin-top: -50px;
+  margin-left: -32px;
+  background: url(../images/0103-served-plate_64.png) no-repeat;
+}
 
-      /* Ícono decorativo superior */
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 64px;       /* Ancho del ícono */
-        height: 64px;      /* Alto del ícono */
-        margin-top: -50px; /* Posicionamiento vertical */
-        margin-left: -32px; /* Centrado horizontal (64/2 = 32) */
-        background: url(../images/0103-served-plate_64.png) no-repeat;
-      }
-    }
-
-    .sub-heading {
-      color: #000000; /* Negro para mejor contraste */
-    }
-  }
+.fh5co-heading .sub-heading {
+  color: #000000;
 }
 
 /* ===================================================
 CONTENEDOR PRINCIPAL DEL GRID
 =================================================== */
 .grid-container {
-  max-width: 1200px;       /* Ancho máximo del contenedor */
-  margin: 0 auto;          /* Centrado horizontal */
-  padding: 40px 20px;      /* Espaciado interno */
-  display: grid;           /* Activa CSS Grid */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas responsivas */
-  gap: 30px;               /* Espacio entre elementos del grid */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
 
 /* ===================================================
 ELEMENTOS INDIVIDUALES DEL GRID
 =================================================== */
 .grid-item {
-  background: #fff;               /* Fondo blanco */
-  border-radius: 15px;            /* Esquinas redondeadas */
-  overflow: hidden;               /* Oculta exceso de contenido */
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Sombra suave */
-  transition: transform 0.3s ease;/* Animación al hacer hover */
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
-/* Efecto hover para elementos del grid */
 .grid-item:hover {
-  transform: translateY(-10px);   /* Levanta el elemento 10px */
+  transform: translateY(-10px);
 }
 
 /* ===================================================
 IMAGENES DENTRO DEL GRID
 =================================================== */
 .grid-image {
-  width: 100%;          /* Ocupa todo el ancho del contenedor */
-  height: 250px;        /* Altura fija para uniformidad */
-  object-fit: cover;    /* Recorta la imagen manteniendo proporciones */
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
 /* ===================================================
 CONTENIDO TEXTUAL DENTRO DE LOS ELEMENTOS
 =================================================== */
 .grid-content {
-  padding: 20px;        /* Espaciado interno del contenido */
+  padding: 20px;
 }
 
 .grid-content h3 {
-  margin: 0 0 10px;     /* Margen inferior */
-  font-family: Arial, sans-serif; /* Fuente del título */
-  color: #333;          /* Color de texto oscuro */
-  font-size: 1.5rem;    /* Tamaño de fuente relativo */
+  margin: 0 0 10px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  font-size: 1.5rem;
 }
 
 .grid-content p {
-  margin: 0;            /* Elimina márgenes predeterminados */
-  font-family: Arial, sans-serif; /* Fuente del párrafo */
-  color: #666;          /* Color de texto medio */
-  line-height: 1.6;     /* Espaciado entre líneas */
-  font-size: 1rem;      /* Tamaño de fuente base */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #666;
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
 /* ===================================================
@@ -687,21 +677,22 @@ DISEÑO RESPONSIVE (TABLETS Y MÓVILES)
 =================================================== */
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas más estrechas */
-    padding: 20px 10px;   /* Reduce espaciado interno */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 20px 10px;
   }
   
   .grid-image {
-    height: 200px;       /* Reduce altura de imágenes */
+    height: 200px;
   }
 }
+
 /* ===================================================
 SECCIÓN PRINCIPAL DE CONTACTO
 =================================================== */
-#fh5co-contact {
-  background-color: #f5f5f5; /* Fondo gris claro */
+#contacto {
+  background-color: #f5f5f5;
   padding: 40px 0;
-  min-height: 10vh; /* Altura mínima (considerar aumentar a 100vh si es full-height) */
+  min-height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -713,17 +704,17 @@ BANNER DE CONTACTO
 .contact-banner {
   background: #fff;
   padding: 20px;
-  max-width: 500px; /* Ancho máximo del contenedor */
+  max-width: 500px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Mejor que justify para contenido corto */
+  text-align: center;
 }
 
 .contact-banner h2 {
   margin-bottom: 20px;
   font-size: 24px;
   color: #333;
-  font-weight: 700; /* Mejor que bold para consistencia numérica */
+  font-weight: 700;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -738,16 +729,16 @@ LISTA DE INFORMACIÓN DE CONTACTO
 
 .contact-info li {
   margin-bottom: 10px;
-  font-size: 2rem; /* Usar unidades relativas */
+  font-size: 2rem;
   color: #555;
   display: flex;
   align-items: center;
-  gap: 10px; /* Mejor que margin-right en el ícono */
+  gap: 10px;
 }
 
 .contact-info i {
   font-size: 1.25rem;
-  color: #eb5b30; /* Color corporativo */
+  color: #eb5b30;
 }
 
 .contact-info a {
@@ -757,16 +748,15 @@ LISTA DE INFORMACIÓN DE CONTACTO
 }
 
 .contact-info a:hover {
-  color: #eb5b30; /* Feedback visual al hover */
+  color: #eb5b30;
 }
-
 /* ===================================================
 MAPA
 =================================================== */
 .map-container iframe {
-  width: 100%; /* Mejor responsivo que 400px fijo */
+  width: 100%;
   height: 250px;
-  border: 0; /* none → 0 para mejor compatibilidad */
+  border: 0;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -774,14 +764,14 @@ MAPA
 /* ===================================================
 FORMULARIO DE CONTACTO
 =================================================== */
-#fh5co-contact form {
+#contacto form {
   background: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#fh5co-contact form h3 {
+#contacto form h3 {
   margin-bottom: 20px;
   font-size: 1rem;
   color: #333;
@@ -789,23 +779,23 @@ FORMULARIO DE CONTACTO
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#fh5co-contact form input,
-#fh5co-contact form textarea {
+#contacto form input,
+#contacto form textarea {
   width: 100%;
   padding: 0.625rem;
   margin-bottom: 0.625rem;
   border: 1px solid #ddd;
   border-radius: 4px;
-  transition: border-color 0.3s ease; /* Mejorar interacción */
+  transition: border-color 0.3s ease;
 }
 
-#fh5co-contact form input:focus,
-#fh5co-contact form textarea:focus {
-  border-color: #eb5b30; /* Feedback visual al enfocar */
+#contacto form input:focus,
+#contacto form textarea:focus {
+  border-color: #eb5b30;
   outline: none;
 }
 
-#fh5co-contact form button {
+#contacto form button {
   background: #eb5b30;
   color: #fff;
   border: none;
@@ -815,29 +805,30 @@ FORMULARIO DE CONTACTO
   transition: background-color 0.3s ease;
 }
 
-#fh5co-contact form button:hover {
-  background-color: #c94c28; /* Oscurecer al hover */
+#contacto form button:hover {
+  background-color: #c94c28;
 }
 
 /* ===================================================
 MEDIA QUERIES PARA RESPONSIVE
 =================================================== */
 @media (max-width: 768px) {
-  #fh5co-contact {
+  #contacto {
     padding: 20px 0;
-    min-height: auto; /* Eliminar altura fija en móviles */
+    min-height: auto;
   }
   
   .contact-banner {
-    max-width: 90%; /* Mayor adaptabilidad */
+    max-width: 90%;
     padding: 15px;
   }
   
   .map-container iframe {
-    height: 200px; /* Ajustar altura para móviles */
+    height: 200px;
   }
 }
-@media (max-width: 480px) { /* Optimizar para móviles */
+
+@media (max-width: 480px) {
   .contact-info li {
     flex-direction: column;
     text-align: center;
@@ -847,11 +838,9 @@ MEDIA QUERIES PARA RESPONSIVE
 /* ===================================================
 COMPONENTES PRINCIPALES
 =================================================== */
-
-/* Botón primario */
 .btn-primary {
-  background-color: #00ff0d; /* Color verde brillante */
-  color: #333; /* Texto oscuro */
+  background-color: #00ff0d;
+  color: #333;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -860,7 +849,7 @@ COMPONENTES PRINCIPALES
 }
 
 .btn-primary:hover {
-  background-color: #FFC107; /* Amarillo al hover */
+  background-color: #F18B23;
 }
 
 /* ===================================================
@@ -868,7 +857,7 @@ ESTRUCTURA PRINCIPAL
 =================================================== */
 #fh5co-container {
   position: relative;
-  z-index: 10; /* Asegura posición sobre otros elementos */
+  z-index: 10;
 }
 
 /* ===================================================
@@ -877,50 +866,45 @@ PIE DE PÁGINA
 #fh5co-footer {
   background-color: #f5f5f5;
   padding: 40px 0;
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
+}
 
-  /* Redes Sociales */
-  .fh5co-social {
-    list-style: none;
-    padding: 0;
-    
-    li {
-      display: inline-block;
-      margin: 0 20px;
-      
-      a {
-        display: block;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        font-size: 2rem;
-        background-color: #eb5b30;
-        color: #333;
-        border-radius: 50%;
-        transition: background-color 0.3s ease;
-        
-        &:hover {
-          background-color: #FFC107;
-        }
-      }
-    }
-  }
+#fh5co-footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#fh5co-footer .fh5co-social {
+  list-style: none;
+  padding: 0;
+}
+
+#fh5co-footer .fh5co-social li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+#fh5co-footer .fh5co-social li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 2rem;
+  background-color: #eb5b30;
+  color: #333;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+#fh5co-footer .fh5co-social li a:hover {
+  background-color: #FFC107;
 }
 /* ===================================================
 PIE DE PÁGINA
 =================================================== */
 
 /* ===================================================
-   ESTILOS GENERALES DEL MENÚ
-   Colores principales:
-   - Naranja corporativo: #fb6e14
-   - Texto oscuro: #130d08
-   - Fondo claro: #ffffff
+ESTILOS GENERALES DEL MENÚ
 =================================================== */
 .main-nav {
   background: #ffffff;
@@ -948,7 +932,7 @@ PIE DE PÁGINA
 }
 
 /* ===================================================
-   VERSIÓN ESCRITORIO
+VERSIÓN ESCRITORIO
 =================================================== */
 .nav-desktop {
   display: flex;
@@ -967,7 +951,6 @@ PIE DE PÁGINA
   position: relative;
 }
 
-/* Efecto hover y subrayado activo */
 .nav-desktop a:hover,
 .nav-desktop a.active {
   color: #fb6e14;
@@ -984,7 +967,7 @@ PIE DE PÁGINA
 }
 
 /* ===================================================
-   VERSIÓN MÓVIL
+VERSIÓN MÓVIL
 =================================================== */
 .nav-toggle {
   display: none;
@@ -1051,7 +1034,6 @@ PIE DE PÁGINA
     display: block;
   }
 
-  /* Animación del botón hamburguesa a X */
   .nav-toggle.active .hamburger:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
   }
@@ -1064,23 +1046,27 @@ PIE DE PÁGINA
     transform: rotate(-45deg) translate(7px, -6px);
   }
 }
+
 /* Políticas de Privacidad */
 .privacy-policy {
   padding: 1rem 0;
   line-height: 1.8;
 }
+
 .col-md-12 {
   margin-top: 3rem;
   padding: 2rem;
   background: #f9f9f9;
   border-radius: 8px;
-} 
+}
+
 .policy-section {
   margin: 1rem 0;
   padding: 2rem;
   background: #f9f9f9;
   border-radius: 8px;
 }
+
 .policy-section h2 {
   color: #2c3e50;
   margin-bottom: 1rem;

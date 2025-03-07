@@ -26,14 +26,14 @@
 
 	var sliderMain = function() {
 		
-	  	$('#fh5co-home .flexslider').flexslider({
+	  	$('#inicio .flexslider').flexslider({
 			animation: "fade",
 			slideshowSpeed: 5000
 	  	});
 
-	  	$('#fh5co-home .flexslider .slides > li').css('height', $(window).height());	
+	  	$('#inicio .flexslider .slides > li').css('height', $(window).height());	
 	  	$(window).resize(function(){
-	  		$('#fh5co-home .flexslider .slides > li').css('height', $(window).height());	
+	  		$('#inicio .flexslider .slides > li').css('height', $(window).height());	
 	  	});
 
 	};
@@ -131,19 +131,19 @@
 			var scrollPos = $(this).scrollTop();
 
 
-			$('#fh5co-home .fh5co-text').css({
+			$('#inicio .fh5co-text').css({
 		      'opacity' : 1-(scrollPos/300),
 		      'margin-top' : (-212) + (scrollPos/1)
 		   });
 
-		   $('#fh5co-home .flexslider .fh5co-overlay').css({
+		   $('#inicio .flexslider .fh5co-overlay').css({
 				'opacity' : (.5)+(scrollPos/2000)
 		   });
 
 		   if (scrollPos > 300) {
-				$('#fh5co-home .fh5co-text').css('display', 'none');
+				$('#inicio .fh5co-text').css('display', 'none');
 			} else {
-				$('#fh5co-home .fh5co-text').css('display', 'block');
+				$('#inicio .fh5co-text').css('display', 'block');
 			}
 		   
 
@@ -235,15 +235,15 @@
 
 	// Animations
 	var homeAnimate = function() {
-		if ( $('#fh5co-home').length > 0 ) {	
+		if ( $('#inicio').length > 0 ) {	
 
-			$('#fh5co-home').waypoint( function( direction ) {
+			$('#inicio').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
 
 					setTimeout(function() {
-						$('#fh5co-home .to-animate').each(function( k ) {
+						$('#inicio .to-animate').each(function( k ) {
 							var el = $(this);
 							
 							setTimeout ( function () {
@@ -265,7 +265,7 @@
 
 
 	var aboutAnimate = function() {
-		var about = $('#fh5co-about');
+		var about = $('#acerca-de');
 		if ( about.length > 0 ) {	
 
 			about.waypoint( function( direction ) {
@@ -335,7 +335,7 @@
 	};
 
 	var featureAnimate = function() {
-		var feature = $('#fh5co-featured');
+		var feature = $('#nuestro-proceso');
 		if ( feature.length > 0 ) {	
 
 			feature.waypoint( function( direction ) {
@@ -482,7 +482,7 @@
 	};
 
 	var reservationAnimate = function() {
-		var contact = $('#fh5co-contact');
+		var contact = $('#contacto');
 		if ( contact.length > 0 ) {	
 
 			contact.waypoint( function( direction ) {

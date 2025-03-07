@@ -1,0 +1,20 @@
+# robots.txt para Alimentos Kriss
+User-agent: *
+
+# Directorios y archivos bloqueados
+Disallow: /tmp/         # Archivos temporales
+Disallow: /cgi-bin/     # Scripts sensibles
+Disallow: /private/     # Contenido privado (si existe)
+
+# Permitir acceso a recursos necesarios
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Configuración para SEO
+Crawl-delay: 10         # Retraso de 10 segundos entre peticiones
+Sitemap: https://alimentoskriss.com/sitemap.xml  # URL del sitemap
+
+# Bloquear páginas duplicadas o no indexables
+Disallow: /index.html   # Evita contenido duplicado con "/"
+Disallow: /fh5co-contact/submit  # Si existe un formulario de contacto POST

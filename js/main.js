@@ -39,7 +39,7 @@
 	};
 
 	var sliderSayings = function() {
-		$('#fh5co-sayings .flexslider').flexslider({
+		$('#frases-inspiradoras .flexslider').flexslider({
 			animation: "slide",
 			slideshowSpeed: 5000,
 			directionNav: false,
@@ -306,7 +306,7 @@
 	};
 
 	var sayingsAnimate = function() {
-		var sayings = $('#fh5co-sayings');
+		var sayings = $('#frases-inspiradoras');
 		if ( sayings.length > 0 ) {	
 
 			sayings.waypoint( function( direction ) {

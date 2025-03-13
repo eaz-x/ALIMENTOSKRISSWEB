@@ -1,5 +1,5 @@
 /* ===================================================
-   MEDIA QUERIES GLOBALES - ESTRATEGIA MOBILE FIRST
+MEDIA QUERIES GLOBALES - ESTRATEGIA MOBILE FIRST
 =================================================== */
 @media (hover: none) and (pointer: coarse) {
   a, button {
@@ -64,11 +64,7 @@ html {
     margin: -90px auto 25px !important;
   }
   
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-}
+
 
 /* Tabletas y laptops pequeñas (768px - 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -87,7 +83,7 @@ html {
 }
 
 /* ===================================================
-   AJUSTES ESPECÍFICOS POR COMPONENTE
+AJUSTES ESPECÍFICOS POR COMPONENTE
 =================================================== */
 
 /* Header - Todos los móviles */
@@ -115,15 +111,7 @@ html {
   }
 }
 
-/* Sección Featured Grid */
-@media (max-width: 1024px) {
-  .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
-  .grid-image { height: 30vh !important; }
-}
+
 
 @media (max-width: 480px) {
   .grid-image { height: 180px !important; }
@@ -225,4 +213,5 @@ only screen and (min-resolution: 192dpi) {
     height: 32px;
     line-height: 32px;
   }
+}
 }

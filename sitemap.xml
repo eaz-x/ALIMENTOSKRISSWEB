@@ -12,35 +12,35 @@
   <url>
     <loc>https://alimentoskriss.com/acerca-de</loc>
     <lastmod>2024-03-06</lastmod>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
 
   <!-- Contacto -->
   <url>
     <loc>https://alimentoskriss.com/contacto</loc>
     <lastmod>2024-03-06</lastmod>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
   <!-- Política de Privacidad -->
   <url>
-    <loc>https://alimentoskriss.com/privacidad.html</loc>
+    <loc>https://alimentoskriss.com/privacidad</loc>
     <lastmod>2024-03-06</lastmod>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <!-- Nuestro Proceso de Elaboración -->
   <url>
     <loc>https://alimentoskriss.com/nuestro-proceso</loc>
     <lastmod>2024-03-06</lastmod>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
 
   <!-- Citas Inspiradoras -->
   <url>
     <loc>https://alimentoskriss.com/frases-inspiradoras</loc>
     <lastmod>2024-03-06</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
 
 </urlset>

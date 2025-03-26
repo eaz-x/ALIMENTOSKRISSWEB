@@ -1,20 +1,35 @@
-# robots.txt para Alimentos Kriss
 User-agent: *
 
-# Directorios y archivos bloqueados
-Disallow: /tmp/         # Archivos temporales
-Disallow: /cgi-bin/     # Scripts sensibles
-Disallow: /private/     # Contenido privado (si existe)
+# --------------------------------------
+# Directorios técnicos bloqueados
+# --------------------------------------
+Disallow: /tmp/          # Archivos temporales (sin valor SEO)
+Disallow: /cgi-bin/      # Scripts del servidor (seguridad)
+Disallow: /private/      # Contenido interno (ej: borradores)
+Disallow: /search/       # Resultados de búsqueda interna (duplicados)
 
-# Permitir acceso a recursos necesarios
-Allow: /images/
-Allow: /css/
-Allow: /js/
+# --------------------------------------
+# Recursos permitidos para SEO
+# --------------------------------------
+Allow: /css/*            # Hojas de estilo
+Allow: /js/*             # Scripts JavaScript
+Allow: /images/*         # Imágenes optimizadas
+Allow: /fonts/*          # Fuentes personalizadas
 
-# Configuración para SEO
-Crawl-delay: 10         # Retraso de 10 segundos entre peticiones
-Sitemap: https://alimentoskriss.com/sitemap.xml  # URL del sitemap
+# --------------------------------------
+# Evitar contenido duplicado
+# --------------------------------------
+Disallow: /*?            # Parámetros de URL (ej: ?utm_source, ?sort=price)
+Disallow: /print/        # Versiones para imprimir (ej: /print/producto)
 
-# Bloquear páginas duplicadas o no indexables
-Disallow: /index.html   # Evita contenido duplicado con "/"
-Disallow: /fh5co-contact/submit  # Si existe un formulario de contacto POST
+# --------------------------------------
+# URLs clave permitidas explícitamente
+# --------------------------------------
+Allow: /blog/*           # Contenido del blog (si existe)
+Allow: /productos/*      # Páginas de productos (si existen)
+Allow: /recetas/*        # Sección de recetas (si existe)
+
+# --------------------------------------
+# Configuración esencial
+# --------------------------------------
+Sitemap: https://alimentoskriss.com/sitemap.xml

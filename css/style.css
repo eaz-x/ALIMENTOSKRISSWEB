@@ -507,7 +507,7 @@ SECCIÓN DE CITAS (#frases-inspiradoras)
 #frases-inspiradoras .flexslider .flex-control-paging.flex-control-nav {
   position: relative;
   bottom: -70px;
-}
+  }
 
 #frases-inspiradoras .flexslider .flex-control-paging.flex-control-nav li a {
   width: 12px;

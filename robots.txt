@@ -7,27 +7,39 @@ Disallow: /tmp/          # Archivos temporales (sin valor SEO)
 Disallow: /cgi-bin/      # Scripts del servidor (seguridad)
 Disallow: /private/      # Contenido interno (ej: borradores)
 Disallow: /search/       # Resultados de búsqueda interna (duplicados)
+Disallow: /admin/        # Panel de administración (si existe)
+Disallow: /wp-admin/     # WordPress admin (si aplica)
+Disallow: /includes/     # Archivos de inclusión del sistema
+Disallow: /wp-json/      # API de WordPress (si usas WP)
+Disallow: /xmlrpc.php    # Entrada XML-RPC (prevención de ataques)
 
 # --------------------------------------
 # Recursos permitidos para SEO
 # --------------------------------------
-Allow: /css/*            # Hojas de estilo
-Allow: /js/*             # Scripts JavaScript
-Allow: /images/*         # Imágenes optimizadas
-Allow: /fonts/*          # Fuentes personalizadas
+Allow: /css/*.css$       # Solo archivos CSS
+Allow: /js/*.js$         # Solo archivos JavaScript
+Allow: /images/          # Todas las imágenes
+Allow: /fonts/           # Fuentes personalizadas
+Allow: /favicon.ico      # Ícono del sitio (importante para UX)
 
 # --------------------------------------
-# Evitar contenido duplicado
+# Evitar contenido duplicado y parámetros
 # --------------------------------------
-Disallow: /*?            # Parámetros de URL (ej: ?utm_source, ?sort=price)
-Disallow: /print/        # Versiones para imprimir (ej: /print/producto)
+Disallow: /*?*           # Todos los parámetros de URL
+Disallow: /print/        # Versiones para imprimir
+Disallow: /tag/          # Etiquetas (si usa WordPress)
+Disallow: /feed/         # Feeds RSS (a menos que sean importantes)
 
 # --------------------------------------
 # URLs clave permitidas explícitamente
 # --------------------------------------
-Allow: /blog/*           # Contenido del blog (si existe)
-Allow: /productos/*      # Páginas de productos (si existen)
-Allow: /recetas/*        # Sección de recetas (si existe)
+Allow: /$                # Página principal
+Allow: /acerca-de$       # Sobre nosotros
+Allow: /contacto$        # Contacto
+Allow: /privacidad$      # Política de privacidad
+Allow: /nuestro-proceso$ # Proceso de elaboración
+Allow: /frases-inspiradoras$ # Frases motivacionales
+Allow: /sitemap.xml$     # Permite acceso al sitemap
 
 # --------------------------------------
 # Configuración esencial

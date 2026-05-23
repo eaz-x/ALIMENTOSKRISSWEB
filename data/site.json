@@ -1,0 +1,92 @@
+{
+  "brand": {
+    "name": "Alikriss",
+    "company": "Alimentos Kriss VII, C.A.",
+    "rif": "J-50038998-1",
+    "tagline": "Hecho con amor en Venezuela",
+    "url": "https://www.alimentoskriss.com",
+    "email": "info@alimentoskriss.com",
+    "address": "Av. Agustín Codazzi, Calle La Palmita, Caracas – Distrito Capital",
+    "legalNote": "QTA. EDOCLAR 29 Anexo A",
+    "country": "Venezuela",
+    "locale": "es_VE"
+  },
+
+  "logos": {
+    "brand":   "assets/img/logo-alikriss.png",
+    "company": "assets/img/logo-alimentos-kriss.png"
+  },
+
+  "colors": {
+    "gold":      "#E6BB4F",
+    "goldDark":  "#C99A2E",
+    "goldLight": "#F5D780",
+    "black":     "#1A0A04",
+    "deep":      "#282828",
+    "red":       "#B8001E",
+    "cream":     "#FFFBF3"
+  },
+
+  "fonts": {
+    "heading": "Playfair Display",
+    "body":    "Nunito",
+    "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap"
+  },
+
+  "mission": "Ofrecer productos de calidad e innovación que fidelicen a nuestros clientes, satisfagan sus necesidades nutricionales y apoyen el desarrollo de comunidades locales y globales.",
+  "vision":  "Ser reconocidos como empresa ejemplar en la gestión de la cadena agroalimentaria, cumpliendo los más altos estándares de servicio para brindar bienestar a las personas y al planeta.",
+  "essence": "Una empresa que se nutre de la naturaleza, se compromete con la calidad y se inspira en la modernidad. Cada elemento fue seleccionado para reflejar nuestros valores fundamentales.",
+
+  "values": [
+    { "icon": "🌱", "title": "Naturaleza",   "text": "Nos nutrimos de las bondades de la naturaleza seleccionando ingredientes frescos y auténticos." },
+    { "icon": "💛", "title": "Calidad",      "text": "Cada producto pasa por estrictos controles para garantizar lo mejor en tu mesa cada día." },
+    { "icon": "🚀", "title": "Innovación",   "text": "Combinamos tradición y modernidad para crear sabores que sorprenden y conquistan paladares." },
+    { "icon": "🤝", "title": "Compromiso",   "text": "Apoyamos el desarrollo de comunidades locales con responsabilidad social corporativa." }
+  ],
+
+  "testimonials": [
+    {
+      "initials": "ML",
+      "name": "María Luisa R.",
+      "location": "Caracas, Venezuela",
+      "rating": 5,
+      "text": "\"Mis hijos piden los Macarrones Alikriss todos los días. El sabor a queso es increíble y se preparan súper rápido. ¡Son el rescate perfecto para las noches de semana!\""
+    },
+    {
+      "initials": "CA",
+      "name": "Carmen Alvarado",
+      "location": "Valencia, Venezuela",
+      "rating": 5,
+      "text": "\"Compré por primera vez y quedé enamorada. La pasta queda perfecta al dente y el queso en polvo le da un sabor que no esperaba. ¡Demasiado rico!\""
+    },
+    {
+      "initials": "JP",
+      "name": "José Pérez",
+      "location": "Maracaibo, Venezuela",
+      "rating": 5,
+      "text": "\"Producto venezolano de altísima calidad. Se nota que lo hacen con amor. El empaque es bonito y la pasta es de lo mejor que he probado. 100% recomendado.\""
+    }
+  ],
+
+  "experienceCards": [
+    { "icon": "🌾", "title": "Ingredientes premium",  "text": "Pasta elaborada con sémola de trigo durum de alta calidad, seleccionada para ofrecer la mejor textura al dente y un sabor auténtico en cada bocado." },
+    { "icon": "🧀", "title": "Sabor que conquista",   "text": "Nuestra mezcla exclusiva de queso cheddar en polvo fue desarrollada para crear ese sabor irresistible que tus hijos van a pedir una y otra vez." },
+    { "icon": "⚡", "title": "Lista en minutos",       "text": "La vida es rápida pero la familia no puede esperar. En pocos pasos tendrás un plato caliente, delicioso y lleno de amor sobre la mesa." }
+  ],
+
+  "nav": [
+    { "label": "Producto",     "href": "#producto"     },
+    { "label": "Preparación",  "href": "#preparacion"  },
+    { "label": "Nosotros",     "href": "#nosotros"     },
+    { "label": "Pedir ahora",  "href": "#contacto",    "cta": true }
+  ],
+
+  "footerLinks": [
+    { "label": "La experiencia", "href": "#nosotros"    },
+    { "label": "El producto",    "href": "#producto"    },
+    { "label": "Preparación",    "href": "#preparacion" },
+    { "label": "Contacto",       "href": "#contacto"    },
+    { "label": "Sobre nosotros", "href": "#nosotros"    },
+    { "label": "Dónde comprar",  "href": "#contacto"    }
+  ]
+}

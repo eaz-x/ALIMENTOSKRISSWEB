@@ -1,0 +1,60 @@
+/* =============================================================================
+   RESPONSIVE.CSS — Todos los breakpoints en un solo lugar
+   Editar aquí para cambiar el comportamiento en móvil/tablet.
+============================================================================= */
+
+/* ── Tablet (≤ 1024px) ──────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .exp-grid      { grid-template-columns: 1fr 1fr; }
+  .values-grid   { grid-template-columns: 1fr 1fr; }
+  .steps         { grid-template-columns: 1fr 1fr; }
+}
+
+/* ── Móvil (≤ 768px) ────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  /* Nav: ocultar links de texto, mantener logo + CTA si hubiera */
+  .nav              { padding: 0.7rem 1.2rem; }
+  .nav-links        { display: none; }      /* TODO: añadir menú hamburguesa */
+
+  /* Hero: apilado vertical */
+  .hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .hero-body        { margin-left: auto; margin-right: auto; }
+  .hero-actions     { justify-content: center; }
+
+  /* Producto: apilado vertical */
+  .product-inner    { grid-template-columns: 1fr; gap: 3rem; }
+
+  /* Testimonios: una columna */
+  .testi-grid       { grid-template-columns: 1fr; }
+
+  /* Nosotros: apilado vertical */
+  .about-inner      { grid-template-columns: 1fr; }
+
+  /* Footer: apilado vertical */
+  .footer-top       { grid-template-columns: 1fr; }
+  .footer-bottom    { flex-direction: column; text-align: center; }
+
+  /* Experience cards: una columna */
+  .exp-grid         { grid-template-columns: 1fr; }
+
+  /* Stats: dos por fila en móvil */
+  .stats-inner      { flex-direction: row; flex-wrap: wrap; }
+  .stat             { min-width: 40%; }
+}
+
+/* ── Móvil pequeño (≤ 480px) ────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .section          { padding: 4rem 1.2rem; }
+  .values-grid      { grid-template-columns: 1fr 1fr; }
+  .steps            { grid-template-columns: 1fr; }
+  .hero             { padding: 6rem 1.2rem 4rem; }
+
+  .hero-heading     { font-size: 2.2rem; }
+  .product-heading  { font-size: 1.9rem; }
+  .cta-title        { font-size: 1.8rem; }
+}

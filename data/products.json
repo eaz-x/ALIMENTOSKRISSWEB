@@ -1,0 +1,86 @@
+[
+  {
+    "id": "macarrones-queso",
+    "slug": "macarrones-queso",
+    "active": true,
+    "name": "Macarrones con Sabor a Queso",
+    "shortName": "Macarrones con Queso",
+    "tagline": "Pasta venezolana irresistible",
+    "description": "Pasta de sémola de trigo durum con sabor a queso cheddar. Preparación sencilla en cuatro pasos que te llevan directo a la felicidad. Sin complicaciones, sin esperas — pura alegría en cada plato.",
+    "heroText": "Nuestros Macarrones con Sabor a Queso traen la calidez del hogar en cada bocado. Pasta de sémola de trigo durum, lista en minutos, con el queso cheddar que toda la familia ama.",
+
+    "seo": {
+      "title": "Alikriss | Macarrones con Sabor a Queso – Pasta venezolana irresistible",
+      "description": "Alikriss trae a tu mesa los Macarrones con Sabor a Queso más deliciosos de Venezuela. Pasta de sémola de trigo durum, lista en minutos, con queso cheddar irresistible. ¡Pídelos hoy!",
+      "keywords": [
+        "macarrones con queso Venezuela",
+        "pasta venezolana",
+        "Alikriss",
+        "Alimentos Kriss",
+        "macarrones queso cheddar",
+        "pasta rápida Venezuela",
+        "comida venezolana"
+      ]
+    },
+
+    "images": {
+      "front":   "assets/img/productos/macarrones-queso-frente.webp",
+      "back":    "assets/img/productos/macarrones-queso-reverso.webp",
+      "og":      "assets/img/productos/macarrones-queso-og.jpg",
+      "altFront": "Empaque frente – Macarrones con Sabor a Queso Alikriss 200g",
+      "altBack":  "Reverso del empaque – Información nutricional y modo de preparación"
+    },
+
+    "stats": [
+      { "value": "200g",  "label": "Contenido neto" },
+      { "value": "350",   "label": "Cal. por 100g"  },
+      { "value": "15g",   "label": "Proteína / ración" },
+      { "value": "0g",    "label": "Grasa añadida"  },
+      { "value": "100%",  "label": "Made in Venezuela" }
+    ],
+
+    "nutritionPer100g": {
+      "calories": 350,
+      "fat":      0,
+      "carbs":    71,
+      "protein":  15
+    },
+
+    "nutritionChips": [
+      { "value": "15g",  "label": "Proteína"     },
+      { "value": "0g",   "label": "Grasa"        },
+      { "value": "350",  "label": "Calorías"     },
+      { "value": "71g",  "label": "Carbohidratos"}
+    ],
+
+    "features": [
+      "Sémola de trigo durum de primera calidad",
+      "Mezcla exclusiva de queso cheddar en polvo",
+      "Sin grasa añadida (0g por 100g)",
+      "Registrado en SACS Nº A-174.589",
+      "Producido en Venezuela 🇻🇪"
+    ],
+
+    "badges": [
+      { "icon": "⏱", "line1": "Listo en", "line2": "minutos", "style": "red"  },
+      { "icon": "🏆", "line1": "Sabor",    "line2": "original", "style": "gold" }
+    ],
+
+    "prepSteps": [
+      { "step": 1, "icon": "🫙", "title": "Hierve el agua",       "text": "Coloca agua en una olla hasta que esté en un hervor fuerte." },
+      { "step": 2, "icon": "🍝", "title": "Añade los macarrones", "text": "Agrega los macarrones y cocina removiendo ocasionalmente hasta que estén al dente." },
+      { "step": 3, "icon": "🚰", "title": "Cuela y reserva",      "text": "Cuela los macarrones y retira el exceso de agua." },
+      { "step": 4, "icon": "🧀", "title": "Añade el queso",       "text": "Abre el sobre, mezcla con los macarrones y disfruta un sabor irresistible." }
+    ],
+
+    "registration": "CPF0326609002",
+    "sacsReg": "A-174.589",
+    "netWeight": "200g",
+
+    "theme": {
+      "accentColor": "#E6BB4F",
+      "heroGradientFrom": "#2B1100",
+      "heroGradientTo": "#1A0A04"
+    }
+  }
+]

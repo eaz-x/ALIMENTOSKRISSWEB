@@ -1,0 +1,23 @@
+# ============================================================================
+# ROBOTS.TXT — Alikriss / Alimentos Kriss VII, C.A.
+# https://www.alimentoskriss.com/robots.txt
+#
+# Indica a los buscadores qué pueden y qué no pueden indexar.
+# Documentación: https://developers.google.com/search/docs/crawling-indexing/robots/intro
+# ============================================================================
+
+# Reglas para todos los bots
+User-agent: *
+
+# Permitir todo el sitio público
+Allow: /
+
+# No indexar archivos de datos internos (JSON de configuración)
+Disallow: /data/
+
+# No indexar archivos de desarrollo o temporales (si los hay)
+Disallow: /draft/
+Disallow: /temp/
+
+# Sitemap — actualizar URL si cambia el dominio
+Sitemap: https://www.alimentoskriss.com/sitemap.xml
